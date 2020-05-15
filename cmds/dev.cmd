@@ -1,3 +1,5 @@
 start runemacs
-start build\*.sln
+for %%i in (build\*.sln) do (
+	start %%~i
+)
 cmd /k
